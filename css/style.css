@@ -1,0 +1,114 @@
+:root {
+    --teal: #2ec1ac;
+    --teal_hover: #279e8c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: #ffffff5b !important;
+    backdrop-filter: blur(8px);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.custom-bg {
+    background-color: var(--teal) !important;
+}
+
+.custom-bg:hover {
+    background-color: var(--teal_hover) !important;
+}
+
+.h-font {
+    font-family: 'Merienda', cursive;
+}
+
+.h-line {
+    width: 150px;
+    margin: 0 auto;
+    height: 2px;
+}
+
+#alert {
+    position: fixed !important;
+    top: 95px;
+    right: 15px;
+    margin-left: 15px;
+    transform: translateX(101%);
+    transition: transform 0.4s ease-in-out !important;
+    z-index: 1021;
+}
+
+#alert .loading {
+    display: inline-block;
+}
+
+#alert .loading span {
+    display: inline-block;
+    transform: translateY(0px);
+    animation: load 0.39s ease-in-out alternate infinite !important;
+}
+
+#alert .loading .one {
+    animation-delay: 0.11s !important;
+}
+
+#alert .loading .two {
+    animation-delay: 0.22s !important;
+}
+
+#alert .loading .three {
+    animation-delay: 0.32s !important;
+}
+
+.input-focus:focus {
+    border-color: #86b7fe !important;
+}
+
+@keyframes load {
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.anchor-hover:hover {
+    text-decoration: underline !important;
+}
+
+#form-error {
+    position: fixed !important;
+    top: 31px;
+    z-index: 999999;
+    left: 50%;
+    transform: translate(-50%, -125%);
+    transition: transform 0.4s ease-in-out !important;
+}
+
+#form-error .alert {
+    min-width: 280px;
+}
+.modal{
+    backdrop-filter: blur(5px)!important;
+}
+
+.stylish-border{
+    border: 10px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(to right,#833ab4 , #fd1d1d, #fcb045) border-box ;
+    border-radius: 50%;
+}
